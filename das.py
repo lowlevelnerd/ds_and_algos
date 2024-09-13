@@ -17,6 +17,16 @@ list_one = ['a', 'b', 'c']
 list_two = [1, 2, 3]
 list_three = [list_one, list_two]
 print(list_three) # Output: ['a', 'b', 'c'], [1, 2, 3]
+# Methods on Lists
+#
+sample_list = [1, 2, 3, 4]
+# .append(): add an item to the end of list. Equivalent to a[len(a):] = [x]
+print(sample_list.append(5)) # Output: 1, 2, 3, 4, 5
+# .extend(iterable): Extend the list by appending all items from the iterable. Equivalent to a[len(a):] = iterable
+print(list_one.extend(list_two)) # Just like nesting
+# .insert(i, x): Insert an item at a given position. The first argument is the index of the element before which to insert, so a.insert(0, x) inserts at the front of the list, and a.insert(len(a), x) is equivalent to a.append(x)
+print(sample_list.insert(5, 6)) # Output: 1, 2, 3, 4, 5,6
+# .remove(x): Remove the first item from the list whose value is equal to x. Raises ValueError if there is no such item
 
 
 # Tuples
