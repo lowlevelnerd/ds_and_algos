@@ -87,5 +87,15 @@ another_tuple = x, y, z # The reverse op is possible:
 x, y, z = another_tuple
 
 
-# Set
+# Sets: An unordered collection with no duplicate elements.
+# Uses: 1. Membership testing. 2. Eliminating duplicate entries.
+# To create sets: set() or {} are used.
+# To create an empty set we use, set() and not {} which creates an empty dictionary
+girlfriends = {'Jane', 'Doe', 'Joyce', 'Lavy'}
+print(girlfriends) # Outputs the list and removes the duplicates
+# Set comprehensions are also supported
+sample_set = {i for i in 'abracadabra' if i not in 'abc'}
+print(sample_set) # Output: {'r', 'd'}
+#
+
 # Dictionary
