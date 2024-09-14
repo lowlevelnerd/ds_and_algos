@@ -98,4 +98,31 @@ sample_set = {i for i in 'abracadabra' if i not in 'abc'}
 print(sample_set) # Output: {'r', 'd'}
 #
 
-# Dictionary
+# Dictionary: {} creates an empty dictionary.
+book_store = {'Tom Clancy': 3004, 'Rudolph Onyango': 2003, 'Tolstoy Oloo': 1002}
+book_store['Jacob Aliet'] = 2009
+print(book_store) # Output: {'Tom Clancy': 3004, 'Rudolph Onyango': 2003, 'Tolstoy Oloo': 1002, 'Jacob Aliet': 2009}
+# 
+# Looping Techniques: When looping through a sequence, the key and corresponding value can be retrieved at the same time using the items() method.
+swords = {'longclaw': 'house mormont', 'heartsbane': 'house tarlly', 'ice': 'house stark'}
+for k, v in swords.items():
+    print(k, v) # longclaw house mormont, ..., ice house stark
+# position index and corresponding value use enumerate()
+# loop over more sequences at the same time use: zip() function
+m = []
+n = []
+for x, y in zip(m, n):
+    print('what is your{0}? It is {1}.'.format(x, y))
+# to loop over a sequence in reverse: reversed()
+for i in reversed(range(1, 10, 2)):
+    print(i)
+# 9
+# 7
+# 5
+# 3
+# 1
+#
+# To loop over a sequence in a sorted order: sorted()
+x = []
+for i in sorted(x):
+    print(i)
