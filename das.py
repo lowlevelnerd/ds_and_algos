@@ -42,6 +42,19 @@ print(sample_list.count(3)) # Should return 1
 # .sort(*, key=None, reverse=False): sort the items of the list in place
 # .reverse(): reverse the elements of the list in place
 # .copy(): return a shalloe copy of the list. Equivalent to a[:]
+#
+# Using Lists as Ques (first-in, first-out) but it is not effective
+# Use collections.deque to implement a queue
+from collections import deque
+
+queue = deque(['John', 'Jane', 'Doe'])
+queue.append('Oloo') # Oloo arrives
+queue.append('Flopp') # Flopp arrives
+queue.popleft() # The first to arrive now leaves
+# 'John'
+queue.popleft() # The second to arrive now leaves
+# 'Jane'
+queue # >>> deque(['Doe', 'Oloo', 'Flopp'])
 
 
 # Tuples
