@@ -55,6 +55,25 @@ queue.popleft() # The first to arrive now leaves
 queue.popleft() # The second to arrive now leaves
 # 'Jane'
 queue # >>> deque(['Doe', 'Oloo', 'Flopp'])
+#
+# List Comprehensions: Provide a concise way to create lists.
+sq = []
+for x in range(10):
+    sq.append(x**2)
+    print(sq) # >>> [0, 1, 4, ..., 81]
+#
+sq = list(map(lambda x: x**2, range(10))) # or
+sq = [x**2 for x in range(10)]
+#
+[(x, y) for x in [1, 2, 3] for y in [3, 1, 4] if x != y]
+# equivalent to
+combs = []
+for x in [1, 2, 3]:
+    for y in [3, 1, 4]:
+        if x != y:
+            combs.append((x, y))
+# >>> combs
+# [(1, 3), (1, 4), (2, 3), ..., (3, 4)]
 
 
 # Tuples
