@@ -74,8 +74,18 @@ for x in [1, 2, 3]:
             combs.append((x, y))
 # >>> combs
 # [(1, 3), (1, 4), (2, 3), ..., (3, 4)]
+#
+#
+# 
 
 
-# Tuples
+# Tuples: Consist of a number of values separated by comma enclosed in parentheses.
+# empty tuple sample:
+empty_tuple = ()
+filled_tuple = (23, 'Hello', 'Jane Doe')
+another_tuple = x, y, z # The reverse op is possible:
+x, y, z = another_tuple
+
+
 # Set
 # Dictionary
