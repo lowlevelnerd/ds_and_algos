@@ -15,3 +15,11 @@ print(sample_list) # Output: [1, 2, 3, 'a string', 1.2]
 sample_list = [1, 2, 3, 'a string', 1.2]
 # Access elements
 print(sample_list[3]) # Output: 'a string'
+# Add an item to the end of list: .append()
+sample_list.append('another string')
+print(sample_list) # Output: [1, 2, 3, 'a string', 1.2, 'another string']
+# Extend the list by appending all items from the iterable: .extend()
+sample_list = [1, 2, 3, 'a string', 1.2, 'another string']
+another_short_sample_list = ['third string']
+sample_list.extend(another_short_sample_list)
+print(sample_list) # Output: [1, 2, 3, 'a string', 1.2, 'another string', 'third string']
