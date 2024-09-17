@@ -11,3 +11,10 @@ sample_set = set([1, 3, 'Jane', 'Doe'])
 for i in sample_set:
     print(i, end=' ')
 print()
+
+# Frozen Sets: Immutable objects that only support methods and operators
+# that produce a result without affecting the frozen set or sets to which
+# they are applied. 
+# Elements of a frozen set cannot be modified.
+_set = set([1, 2, 3, 4])
+frozen_set = frozenset(_set)
